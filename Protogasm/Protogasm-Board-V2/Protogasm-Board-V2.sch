@@ -1,12 +1,12 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Protogasm"
+Date "2022-01-28"
+Rev "2.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -34,17 +34,6 @@ F 2 "" H 4550 3750 50  0001 C CNN
 F 3 "https://www.adafruit.com/product/2268" H 4550 3750 50  0001 C CNN
 	1    4300 3500
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT_TRIM_US R2
-U 1 1 61E35593
-P 7250 2150
-F 0 "R2" V 7400 2100 50  0000 R CNN
-F 1 "TRIMPOT" V 7150 2300 50  0000 R CNN
-F 2 "" H 7250 2150 50  0001 C CNN
-F 3 "~" H 7250 2150 50  0001 C CNN
-	1    7250 2150
-	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:Rotary_Encoder_Switch SW1
@@ -101,47 +90,6 @@ F 3 "~" H 2900 2160 50  0001 C CNN
 	1    2900 2250
 	1    0    0    -1  
 $EndComp
-$Comp
-L custom-symbols:MPX5050GP U2
-U 1 1 61E369B7
-P 7900 2850
-F 0 "U2" H 7850 3200 50  0000 R CNN
-F 1 "MPX5050GP" H 7850 3100 50  0000 R CNN
-F 2 "" H 7400 2500 50  0001 C CNN
-F 3 "https://www.farnell.com/datasheets/673750.pdf" H 7900 3450 50  0001 C CNN
-	1    7900 2850
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 61E3DD5D
-P 6950 2150
-F 0 "#PWR?" H 6950 2000 50  0001 C CNN
-F 1 "+5V" H 6965 2323 50  0000 C CNN
-F 2 "" H 6950 2150 50  0001 C CNN
-F 3 "" H 6950 2150 50  0001 C CNN
-	1    6950 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61E3E460
-P 7600 2150
-F 0 "#PWR?" H 7600 1900 50  0001 C CNN
-F 1 "GND" H 7605 1977 50  0000 C CNN
-F 2 "" H 7600 2150 50  0001 C CNN
-F 3 "" H 7600 2150 50  0001 C CNN
-	1    7600 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7400 2150 7600 2150
-Wire Wire Line
-	7100 2150 6950 2150
-Wire Wire Line
-	7250 2000 7250 1900
-Wire Wire Line
-	7250 1900 6600 1900
 Wire Wire Line
 	4650 3500 5100 3500
 $Comp
@@ -170,10 +118,6 @@ F 3 "" H 4850 3600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4650 3600 4850 3600
-Wire Wire Line
-	6400 2500 6600 2500
-Wire Wire Line
-	6600 1900 6600 2500
 Wire Wire Line
 	7500 2700 6400 2700
 $Comp
@@ -214,7 +158,6 @@ Wire Wire Line
 	7900 3150 8500 3150
 Wire Wire Line
 	8500 3150 8500 3000
-Connection ~ 7900 3150
 $Comp
 L power:GND #PWR?
 U 1 1 61E5D584
@@ -377,5 +320,62 @@ F 2 "" H 2600 2300 50  0001 C CNN
 F 3 "~" H 2600 2300 50  0001 C CNN
 	1    2600 2300
 	0    1    1    0   
+$EndComp
+Connection ~ 7900 3150
+Wire Wire Line
+	6600 1900 6600 2500
+Wire Wire Line
+	6400 2500 6600 2500
+Wire Wire Line
+	7250 1900 6600 1900
+Wire Wire Line
+	7250 2000 7250 1900
+Wire Wire Line
+	7100 2150 6950 2150
+Wire Wire Line
+	7400 2150 7600 2150
+$Comp
+L power:GND #PWR?
+U 1 1 61E3E460
+P 7600 2150
+F 0 "#PWR?" H 7600 1900 50  0001 C CNN
+F 1 "GND" H 7605 1977 50  0000 C CNN
+F 2 "" H 7600 2150 50  0001 C CNN
+F 3 "" H 7600 2150 50  0001 C CNN
+	1    7600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61E3DD5D
+P 6950 2150
+F 0 "#PWR?" H 6950 2000 50  0001 C CNN
+F 1 "+5V" H 6965 2323 50  0000 C CNN
+F 2 "" H 6950 2150 50  0001 C CNN
+F 3 "" H 6950 2150 50  0001 C CNN
+	1    6950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L custom-symbols:MPX5050GP U2
+U 1 1 61E369B7
+P 7900 2850
+F 0 "U2" H 7850 3200 50  0000 R CNN
+F 1 "MPX5050GP" H 7850 3100 50  0000 R CNN
+F 2 "" H 7400 2500 50  0001 C CNN
+F 3 "https://www.farnell.com/datasheets/673750.pdf" H 7900 3450 50  0001 C CNN
+	1    7900 2850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_TRIM_US R2
+U 1 1 61E35593
+P 7250 2150
+F 0 "R2" V 7400 2100 50  0000 R CNN
+F 1 "TRIMPOT" V 7150 2300 50  0000 R CNN
+F 2 "" H 7250 2150 50  0001 C CNN
+F 3 "~" H 7250 2150 50  0001 C CNN
+	1    7250 2150
+	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC

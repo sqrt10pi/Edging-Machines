@@ -1,12 +1,12 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Protogasm"
+Date "2022-01-28"
+Rev "2.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -58,17 +58,6 @@ F 3 "~" H 4650 2160 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:D D1
-U 1 1 61E36E09
-P 2300 2300
-F 0 "D1" V 2250 2450 50  0000 C CNN
-F 1 "D" V 2350 2450 50  0000 C CNN
-F 2 "" H 2300 2300 50  0001 C CNN
-F 3 "~" H 2300 2300 50  0001 C CNN
-	1    2300 2300
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:Q_NMOS_GDS Q1
 U 1 1 61E3BD27
 P 3000 3000
@@ -84,7 +73,7 @@ L Device:R_US R1
 U 1 1 61E3C963
 P 3500 3150
 F 0 "R1" H 3568 3196 50  0000 L CNN
-F 1 "R_US" H 3568 3105 50  0000 L CNN
+F 1 "220k" H 3568 3105 50  0000 L CNN
 F 2 "" V 3540 3140 50  0001 C CNN
 F 3 "~" H 3500 3150 50  0001 C CNN
 	1    3500 3150
@@ -300,18 +289,14 @@ $EndComp
 Wire Wire Line
 	2900 2550 2900 2600
 Wire Wire Line
-	2900 2600 2300 2600
-Wire Wire Line
-	2300 2600 2300 2450
+	2900 2600 2600 2600
 Connection ~ 2900 2600
 Wire Wire Line
 	2900 2600 2900 2800
 Wire Wire Line
 	2900 2050 2900 1950
 Wire Wire Line
-	2900 1950 2300 1950
-Wire Wire Line
-	2300 1950 2300 2150
+	2900 1950 2600 1950
 $Comp
 L power:+12V #PWR?
 U 1 1 61E66170
@@ -378,4 +363,19 @@ NoConn ~ 5400 2500
 NoConn ~ 5400 2200
 NoConn ~ 5400 2100
 NoConn ~ 6000 1700
+Wire Wire Line
+	2600 2600 2600 2450
+Wire Wire Line
+	2600 1950 2600 2150
+$Comp
+L Device:D D1
+U 1 1 61E36E09
+P 2600 2300
+F 0 "D1" V 2550 2200 50  0000 R CNN
+F 1 "1N5818-B" V 2650 2200 50  0000 R CNN
+F 2 "" H 2600 2300 50  0001 C CNN
+F 3 "~" H 2600 2300 50  0001 C CNN
+	1    2600 2300
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
