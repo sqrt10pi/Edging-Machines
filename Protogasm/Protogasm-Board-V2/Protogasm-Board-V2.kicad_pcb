@@ -162,7 +162,7 @@
 
   (footprint "Rotary_Encoder:RotaryEncoder_Alps_EC12E-Switch_Vertical_H20mm" (layer "F.Cu")
     (tedit 5A64F492) (tstamp 33e573a3-f2e1-475a-8fab-147b3f04e30b)
-    (at 148.5178 88.0364 -90)
+    (at 148.4162 88.011 -90)
     (descr "Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC12E/EC12E1240405.html & http://cdn-reichelt.de/documents/datenblatt/F100/402097STEC12E08.PDF")
     (tags "rotary encoder")
     (property "Sheetfile" "Protogasm-Board-V2.kicad_sch")
@@ -229,7 +229,7 @@
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" (layer "F.Cu")
     (tedit 5AE50EF0) (tstamp 48c8cbee-7a14-4bc3-940c-f28988918a33)
-    (at 132.9984 95.2754 90)
+    (at 132.973 95.2246 90)
     (descr "C, Disc series, Radial, pin pitch=2.50mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 2.50mm  diameter 5mm width 2.5mm Capacitor")
     (property "Sheetfile" "Protogasm-Board-V2.kicad_sch")
@@ -273,7 +273,7 @@
 
   (footprint "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" (layer "F.Cu")
     (tedit 5AC8BA0D) (tstamp a0850526-66fb-4da6-b7ba-bc1c0672c893)
-    (at 157.734 95.25)
+    (at 159.4866 95.123)
     (descr "TO-220-3, Horizontal, RM 2.54mm, see https://www.vishay.com/docs/66542/to-220-1.pdf")
     (tags "TO-220-3 Horizontal RM 2.54mm")
     (property "Sheetfile" "Protogasm-Board-V2.kicad_sch")
@@ -377,7 +377,7 @@
 
   (footprint "Diode_THT:D_A-405_P7.62mm_Horizontal" (layer "F.Cu")
     (tedit 5AE50CD5) (tstamp b28c22e7-1e2e-4b0e-bc20-cff24a2b2069)
-    (at 154.69 113.919 90)
+    (at 154.563 113.8174 90)
     (descr "Diode, A-405 series, Axial, Horizontal, pin pitch=7.62mm, , length*diameter=5.2*2.7mm^2, , http://www.diodes.com/_files/packages/A-405.pdf")
     (tags "Diode A-405 series Axial Horizontal pin pitch 7.62mm  length 5.2mm diameter 2.7mm")
     (property "Sheetfile" "Protogasm-Board-V2.kicad_sch")
@@ -439,7 +439,7 @@
 
   (footprint "custom-footprints:uxcell_TRIMPOT" (layer "F.Cu")
     (tedit 61F5B1D4) (tstamp cee4fc39-0973-45b2-8fb5-498097c5ee22)
-    (at 130.0774 84.5058)
+    (at 130.052 84.455)
     (property "Sheetfile" "Protogasm-Board-V2.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-000061e35593")
@@ -708,7 +708,7 @@
 
   (footprint "custom-footprints:MPX5050GP" (layer "B.Cu")
     (tedit 61F5AFDE) (tstamp c451ac1a-c053-4fda-87d3-00b8a65336b1)
-    (at 126.369 90.17 180)
+    (at 126.369 90.2208 180)
     (property "Sheetfile" "Protogasm-Board-V2.kicad_sch")
     (property "Sheetname" "")
     (path "/00000000-0000-0000-0000-000061e369b7")
