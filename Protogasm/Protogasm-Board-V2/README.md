@@ -1,3 +1,11 @@
+# Protogasm Board V3
+
+## Changelog
+
+- Solved the issue with the incorrectly positioned SW1. SW1 should now line up with the case correctly (if I did all my math correctly)
+- After a ton of problem solving, figured out a place for the MPX5050GP which should allow it to be used on the board without modifying the board. The constraints that I was considering ended up on User.1 and User.2 layers for future reference. The best solution seemed to be having the pressure sensor rotated and placed in the area of the Arduino without a bunch of tall components, with the valve facing the cutout of the case.
+- I had hoped to keep most positions in the same place for this update (just fixing SW1 and MPX5050GP), but after moving the MPX I was forced to essentially update the positions of nearly every component. Additionally, I took the liberty of moving the motor pins closer to the case cutout and also flipped them to the reverse side.
+
 # Protogasm Board V2
 
 ## Changelog
