@@ -1,6 +1,6 @@
 (footprint "MPX5050GP" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 61F5AFDE)
+  (tedit 61F5F1DD)
   (attr through_hole)
   (fp_text reference "REF**" (at -1.19 -1.99 unlocked) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)) (justify left))
@@ -63,6 +63,8 @@
   (fp_line (start 3.08 -0.59) (end 3.08 0.05) (layer "F.SilkS") (width 0.12) (tstamp e50054c1-942f-418a-bfd7-d248cd0d4c57))
   (fp_line (start 1 5.66) (end 1.795 5.66) (layer "F.SilkS") (width 0.12) (tstamp f8cfd3aa-e4ff-4f9d-9bf9-0adf19203b52))
   (fp_line (start 1 9.57) (end 2.41 9.57) (layer "F.SilkS") (width 0.12) (tstamp fd4c7d1c-8c57-45d5-ae7b-8381a3e73b19))
+  (fp_arc (start 10.875 15.125) (mid 13.5125 17.8625) (end 10.775 20.5) (layer "F.SilkS") (width 0.254) (tstamp 8b3b2823-367d-47c5-b65d-5cf9cfa973da))
+  (fp_arc (start 10.875 -2.7) (mid 8.3 -5.25) (end 10.85 -7.825) (layer "F.SilkS") (width 0.254) (tstamp cf31918f-854f-4015-9c6f-2423b1288c65))
   (fp_poly (pts
       (xy 11.174644 -8.731506)
       (xy 11.460513 -8.68593)
