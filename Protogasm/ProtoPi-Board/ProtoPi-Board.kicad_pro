@@ -331,7 +331,7 @@
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "lib_symbol_issues": "warning",
+      "lib_symbol_issues": "ignore",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -352,7 +352,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Protogasm-Board-V2.kicad_pro",
+    "filename": "ProtoPi-Board.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -386,10 +386,10 @@
         "name": "Power",
         "nets": [
           "+12V",
+          "+3V3",
           "+5V",
-          "/A0",
-          "/AREF",
-          "/D9",
+          "/A_CH0",
+          "/A_REF",
           "/MOTOR-",
           "GND"
         ],
